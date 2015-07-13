@@ -6,7 +6,8 @@ body {
     margin: 0;
 }
 
-.progress {
+// .progress {
+head {
 
     position: relative;
     height: 4px;
@@ -18,13 +19,16 @@ body {
     overflow: hidden;
 }
 
-.progress .indeterminate {
-
+// .progress .indeterminate {
+head:after {
     background-color: #{$barColor};
+    display: block;
+    content: '';
+    height: 4px;
 }
 
-.progress .indeterminate:before {
-
+// .progress .indeterminate:before {
+head:before {
     content: '';
     position: absolute;
     background-color: inherit;
