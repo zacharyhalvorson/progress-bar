@@ -1,33 +1,32 @@
-$barBackground: 'darkGrey';
-$barColor: 'lightGrey';
+$barBackground: 'lightgray';
+$barColor: 'dimgray';
+$loaderHeight: 8px;
 
 body {
-
     margin: 0;
 }
 
 // .progress {
-head {
-
+.loader {
     position: relative;
-    height: 8px;
+    height: $loaderHeight;
     display: block;
     width: 100%;
-    background-color: #{$barBackground};
+    background-color: #{$barColor};
     background-clip: padding-box;
     overflow: hidden;
 }
 
 // .progress .indeterminate {
-head:after {
-    background-color: #{$barColor};
+.loader:after {
+    background-color: #{$barBackground};
     display: block;
     content: '';
-    height: 8px;
+    height: $loaderHeight;
 }
 
 // .progress .indeterminate:before {
-head:before {
+.loader:before {
     content: '';
     position: absolute;
     background-color: inherit;
